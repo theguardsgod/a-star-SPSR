@@ -10,12 +10,12 @@ from tqdm import tqdm
 
 def main():
     """A multi-thread tool to crop sub imags."""
-    input_folder = os.path.join('../data','dataset','BSD100','HR')
-    save_folder = os.path.join('../data','dataset','BSD100_sub','HR')
+    input_folder = os.path.join('../data','dataset','DIV2K_valid_HR','LR')
+    save_folder = os.path.join('../data','dataset','DIV2K_valid_HR_sub','LR')
     n_thread = 20
-    crop_sz = 480
-    step = 240
-    thres_sz = 48
+    crop_sz = 120
+    step = 60
+    thres_sz = 12
     compression_level = 3  # 3 is the default value in cv2
     # CV_IMWRITE_PNG_COMPRESSION from 0 to 9. A higher value means a smaller size and longer
     # compression time. If read raw images during training, use 0 for faster IO speed.

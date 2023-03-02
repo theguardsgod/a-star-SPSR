@@ -8,8 +8,8 @@ from tqdm import tqdm
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # configurations
-img_folder = os.path.join('../data','dataset','BSD100_sub','HR','*')  # glob matching pattern
-lmdb_save_path = os.path.join('../data','dataset','BSD100_sub_HR.lmdb')  # must end with .lmdb
+img_folder = os.path.join('../data','dataset','DIV2K_valid_HR_sub','LR','*')  # glob matching pattern
+lmdb_save_path = os.path.join('../data','dataset','DIV2K_valid_HR_sub_LR.lmdb')  # must end with .lmdb
 
 img_list = sorted(glob.glob(img_folder))
 dataset = []

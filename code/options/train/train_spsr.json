@@ -3,17 +3,17 @@
   , "use_tb_logger": true
   , "model":"spsr"
   , "scale": 4
-  , "gpu_ids": [0,1]
+  , "gpu_ids": [0]
 
   , "datasets": {
     "train": {
       "name": "DIV2K"
       , "mode": "LRHR"
-      , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/DIV2K800/DIV2K800_HR.lmdb"
-      , "dataroot_LR": "/mnt/4/jzy/dataset/SR_dataset/DIV2K800/DIV2K800.lmdb"
+      , "dataroot_HR": "C:/Chenyu/SPSR/data/dataset/DIV2K_train_HR_sub_HR.lmdb"
+      , "dataroot_LR": "C:/Chenyu/SPSR/data/dataset/DIV2K_train_HR_sub_LR.lmdb"
       , "subset_file": null
       , "use_shuffle": true
-      , "n_workers": 16
+      , "n_workers": 0
       , "batch_size": 30
       , "HR_size": 128
       , "use_flip": true
@@ -22,8 +22,8 @@
     , "val": {
       "name": "Set14"
       , "mode": "LRHR"
-      , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/Set14/Set14_sub"
-      , "dataroot_LR": "/mnt/4/jzy/dataset/SR_dataset/Set14/Set14_sub_bicLRx4"
+      , "dataroot_HR": "C:/Chenyu/SPSR/data/dataset/DIV2K_valid_HR_sub_HR.lmdb"
+      , "dataroot_LR": "C:/Chenyu/SPSR/data/dataset/DIV2K_valid_HR_sub_LR.lmdb"
     }
   }
 
